@@ -1,5 +1,5 @@
 import React from "react";
-import { CountryPicker, Cards, Chart } from "./components";
+import { CountryPicker, Cards, Chart, Map } from "./components";
 import styles from "./App.module.css";
 import { fetchData } from "./api";
 import CoronaImage from "./images/image.png";
@@ -29,6 +29,7 @@ class App extends React.Component {
           handleCountryChange={this.handleCountryChange}
         />
         <Chart data={data} country={country} />
+        <Map />
       </div>
     );
   }
